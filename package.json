@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/rohit-shinde-26/To_Do_app_ReactJs",
+  "homepage": "https://github.com/tracy1-sarah/Jotai-ToDo.git",
   "name": "task",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,11 @@
     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
   },
   "dependencies": {
     "jotai": "^2.13.1",
