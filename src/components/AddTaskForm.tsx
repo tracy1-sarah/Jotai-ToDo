@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {CiCirclePlus} from "react-icons/ci";
 import {useSetAtom} from "jotai";
 import {addTaskAtom} from "../atoms";

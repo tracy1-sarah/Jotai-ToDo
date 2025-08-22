@@ -38,11 +38,6 @@
   "main": "postcss.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohit-shinde-26/To_Do_app_ReactJs.git"
-  },
-  "author": "Rohit",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rohit-shinde-26/To_Do_app_ReactJs/issues"
+    "url": "https://github.com/tracy1-sarah/Jotai-ToDo.git"
   }
 }

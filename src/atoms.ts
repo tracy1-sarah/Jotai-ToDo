@@ -3,28 +3,12 @@ import {Task} from "./types";
 
 export const tasksAtom = atom<Task[]>([]);
 
-//Derived atoms for task counts and filters
-// These atoms derive their values from the tasksAtom and filter or count tasks based on their completion
-// status. They are used to provide quick access to these values without needing to filter the tasks
-// array repeatedly in components.
-export const completedTasksAtom = atom((get) =>
-    get(tasksAtom).filter(task => task.completed)
-);
-
-export const remainingTasksAtom = atom((get) =>
+export const taskCountAtom = atom((get) =>
     get(tasksAtom).filter(task => !task.completed)
 );
 
-export const totalTasksAtom = atom((get) =>
-    get(tasksAtom).length
-);
-
-export const completedTasksCountAtom = atom((get) =>
-    get(completedTasksAtom).length
-);
-
-export const remainingTasksCountAtom = atom((get) =>
-    get(remainingTasksAtom).length
+export const totalTaskAtom = atom((get) =>
+    get(taskCountAtom).length
 );
 
 // Action atoms
